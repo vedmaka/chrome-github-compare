@@ -1,0 +1,7 @@
+{
+  "extensionName": { "message": "GitHub Commit Compare" },
+  "extensionDescription": { "message": "GitHub कमिट सूची में दो कमिट चुनें और उनकी तुलना करें" },
+  "selectCommit": { "message": "तुलना के लिए कमिट $HASH$ चुनें", "placeholders": { "hash": { "content": "$1" } } },
+  "compareSelectedCommits": { "message": "चुने गए कमिट की तुलना करें" },
+  "compareCommits": { "message": "$OLDER$..$NEWER$ की तुलना करें", "placeholders": { "older": { "content": "$1" }, "newer": { "content": "$2" } } }
+}

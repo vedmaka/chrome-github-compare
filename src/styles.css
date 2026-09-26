@@ -1,0 +1,104 @@
+.gh-compare-row-control {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  width: 32px;
+  height: 32px;
+  margin: 0 0 0 8px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--fgColor-muted, #59636e);
+  background: transparent;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 80ms ease-out, border-color 80ms ease-out;
+}
+
+.gh-compare-row-control:hover {
+  border-color: var(--button-default-borderColor-rest, #d1d9e0);
+  background: var(--control-transparent-bgColor-hover, rgba(177, 186, 196, 0.12));
+}
+
+.gh-compare-row-control:has(.gh-compare-checkbox:checked) {
+  border-color: var(--borderColor-accent-emphasis, #0969da);
+  color: var(--fgColor-onEmphasis, #ffffff);
+  background: var(--bgColor-accent-emphasis, #0969da);
+}
+
+.gh-compare-checkbox {
+  display: grid;
+  place-content: center;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  border: 1.5px solid currentColor;
+  border-radius: 3px;
+  background: transparent;
+  color: inherit;
+  cursor: inherit;
+}
+
+.gh-compare-checkbox::before {
+  width: 4px;
+  height: 8px;
+  border: solid currentColor;
+  border-width: 0 2px 2px 0;
+  content: "";
+  transform: translateY(-1px) rotate(45deg) scale(0);
+  transform-origin: center;
+}
+
+.gh-compare-checkbox:checked::before {
+  transform: translateY(-1px) rotate(45deg) scale(1);
+}
+
+.gh-compare-row-control:has(.gh-compare-checkbox:focus-visible),
+#gh-compare-button:focus-visible {
+  outline: 2px solid var(--focus-outlineColor, #0969da);
+  outline-offset: 2px;
+}
+
+.gh-compare-checkbox:focus-visible {
+  outline: none;
+}
+
+#gh-compare-action {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  align-self: center;
+  margin-left: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+#gh-compare-action[hidden] {
+  display: none;
+}
+
+#gh-compare-button {
+  display: inline-flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(27, 31, 36, 0.15);
+  border-radius: 6px;
+  padding: 0 12px;
+  color: #ffffff;
+  background: var(--bgColor-success-emphasis, #1f883d);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#gh-compare-button:hover:not(:disabled) {
+  background: var(--bgColor-success-emphasis, #1a7f37);
+  filter: brightness(0.94);
+}
+
+#gh-compare-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}

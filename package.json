@@ -1,0 +1,12 @@
+{
+  "name": "github-commit-compare",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test",
+    "lint": "node --check src/compare.js && node --check src/content.js",
+    "assets": "bash scripts/build-assets.sh",
+    "package": "bash scripts/package.sh",
+    "release:check": "npm test && npm run lint && npm run package"
+  }
+}
