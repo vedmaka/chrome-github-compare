@@ -57,6 +57,4 @@ The interface and manifest support English, Russian, Spanish, Serbian (Cyrillic)
 
 Regenerate the icon and listing graphics from the supplied root images with `npm run assets`. Build the upload ZIP with `npm run package`. The full release gate is `npm run release:check`
 
-The upload file is `dist/github-commit-compare-1.0.0.zip`. It contains runtime files only. Use [the dashboard checklist](store-listing/dashboard-checklist.md) for listing fields, image uploads, and privacy answers. Chrome Web Store publication is a manual step
-
 For a local browser hydration check, run `playwright-cli -s=hydration-check open`, then `playwright-cli -s=hydration-check run-code --filename=scripts/browser-hydration-check.js`, then close the session. The check intercepts a GitHub URL with a local fixture and makes no GitHub network request
