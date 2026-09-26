@@ -1,7 +1,8 @@
 .DS_Store
 dist/
 *.zip
-docs/
+/docs/*
+!/docs/index.html
 .playwright-cli/
 .superpowers/
 store-listing/

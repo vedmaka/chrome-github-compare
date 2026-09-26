@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the GitHub Commit Compare Chrome extension">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:,">
+  <link rel="canonical" href="https://vedmaka.github.io/chrome-github-compare/">
+  <title>Privacy policy · GitHub Commit Compare</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --background: #f7f9fc;
+      --surface: #ffffff;
+      --text: #172333;
+      --muted: #52647a;
+      --rule: #d5deea;
+      --accent: #0969da;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color-scheme: dark;
+        --background: #0d1117;
+        --surface: #151b24;
+        --text: #e6edf3;
+        --muted: #a3b4c8;
+        --rule: #303d4e;
+        --accent: #69b1ff;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font: 1rem/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .page {
+      width: min(100% - 2rem, 48rem);
+      margin: clamp(2rem, 8vw, 5rem) auto;
+      padding: clamp(1.5rem, 5vw, 3rem);
+      border: 1px solid var(--rule);
+      border-radius: 0.75rem;
+      background: var(--surface);
+    }
+
+    .product {
+      margin: 0 0 1.25rem;
+      color: var(--muted);
+      font-size: 0.94rem;
+      font-weight: 650;
+    }
+
+    h1 {
+      margin: 0;
+      font: 700 clamp(2rem, 6vw, 3rem)/1.12 Georgia, "Times New Roman", serif;
+      letter-spacing: -0.025em;
+      text-wrap: balance;
+    }
+
+    .date {
+      margin: 0.75rem 0 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    h2 {
+      margin: 2rem 0 0.5rem;
+      padding-top: 1.4rem;
+      border-top: 1px solid var(--rule);
+      font-size: 1.05rem;
+      line-height: 1.35;
+    }
+
+    p { margin: 0.5rem 0 1rem; }
+    p:last-child { margin-bottom: 0; }
+
+    a { color: var(--accent); text-underline-offset: 0.18em; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+    @media (max-width: 34rem) {
+      .page { border-radius: 0; }
+    }
+
+    @media print {
+      :root { color-scheme: light; }
+      body { background: #ffffff; color: #172333; }
+      .page { width: 100%; margin: 0; padding: 0; border: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <p class="product">GitHub Commit Compare</p>
+    <h1>Privacy policy</h1>
+    <p class="date">Effective date: <time datetime="2026-09-25">2026-09-25</time></p>
+
+    <h2>What the extension reads</h2>
+    <p>GitHub Commit Compare loads on GitHub repository pages to detect in-page navigation. It adds controls only on commit-list pages. On those pages it reads commit hashes and the repository path to create a GitHub comparison URL. This processing happens locally in your browser</p>
+
+    <h2>How data is handled</h2>
+    <p>The extension does not collect, persist, sell, or share user data with its developer or third parties. When you click Compare, your browser opens a GitHub URL containing the two selected commit hashes. That navigation sends the URL to GitHub under GitHub's own privacy practices</p>
+    <p>The extension has no analytics, advertising, remote code, account system, or backend. It does not read cookies or authentication tokens</p>
+
+    <h2>Retention and control</h2>
+    <p>The extension keeps selected commit hashes in memory while the page is open. Closing or refreshing the page clears that state. To stop all processing, remove or disable the extension in Chrome</p>
+
+  </main>
+</body>
+</html>

@@ -49,6 +49,8 @@ Project files:
 
 The content script loads on GitHub repository pages so it can handle in-page navigation. It adds controls only on commit-list pages. It uses no optional Chrome API permissions, backend, analytics, or persistent storage. See [PRIVACY.md](PRIVACY.md) for data handling
 
+The [GitHub Pages privacy page](docs/index.html) uses the same policy. To publish it, push this change, then set **Settings → Pages → Build and deployment → Deploy from a branch → `master` → `/docs`**. After GitHub completes deployment, use `https://vedmaka.github.io/chrome-github-compare/` as the Chrome Web Store privacy-policy URL
+
 ## Localization
 
 The interface and manifest support English, Russian, Spanish, Serbian (Cyrillic), Croatian, Finnish, Hindi, and Indonesian through Chrome's `_locales/` catalogs.
